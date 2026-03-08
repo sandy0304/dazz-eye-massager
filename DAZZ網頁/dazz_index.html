@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>DAZZ 眼部保養系列｜EM401・EM403</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --pink:#f8b9c9;
+      --dark:#333;
+      --gray:#777;
+      --primary:#f26a8d;
+    }
+    *{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+    body{margin:0;color:var(--dark);background:#fff;}
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
+    header{
+      background:linear-gradient(135deg,#ffe6ee,#fff);
+      padding:20px 16px 40px;
+    }
+    .container{max-width:1080px;margin:0 auto;}
+    .logo{font-size:28px;letter-spacing:4px;font-weight:600;}
+    .hero{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:12px;}
+    .hero-text{flex:1 1 260px;}
+    .hero-text h1{font-size:30px;margin:0 0 8px;}
+    .hero-text p{margin:4px 0;color:var(--gray);}
+    .hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+    .badge{
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff;
+      border:1px solid #ffd3e0;
+      font-size:12px;
+      color:var(--primary);
+    }
+    .hero-img{flex:1 1 260px;text-align:center;}
+
+    section{padding:40px 16px;}
+    section:nth-of-type(odd){background:#fff;}
+    section:nth-of-type(even){background:#fff7fa;}
+
+    h2{margin:0 0 16px;font-size:24px;}
+    .sub{color:var(--gray);font-size:14px;margin-bottom:24px;}
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:16px;
+    }
+    .feature-item{
+      background:#fff;
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 6px 16px rgba(0,0,0,.04);
+    }
+    .feature-item h3{font-size:16px;margin:0 0 6px;}
+    .feature-item p{font-size:13px;margin:0;color:var(--gray);}
+
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+    .card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,.06);
+      display:flex;
+      flex-direction:column;
+    }
+    .card-body{padding:18px;}
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11px;background:#fff3f7;color:var(--primary);margin-bottom:6px;}
+    .card h3{margin:0 0 4px;font-size:18px;}
+    .card small{color:var(--gray);}
+    .spec-list{list-style:none;padding:0;margin:10px 0 0;font-size:13px;color:var(--gray);}
+    .spec-list li{margin-bottom:4px;}
+    .card-footer{
+      margin-top:auto;
+      padding:12px 18px 16px;
+      border-top:1px dashed #f3d2de;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:13px;
+    }
+    .btn{
+      padding:8px 16px;
+      border-radius:999px;
+      border:none;
+      background:var(--primary);
+      color:#fff;
+      font-size:13px;
+      cursor:pointer;
+    }
+    .btn.outline{
+      background:#fff;
+      color:var(--primary);
+      border:1px solid var(--primary);
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:13px;
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 6px 16px rgba(0,0,0,.04);
+    }
+    th,td{border:1px solid #f2d4df;padding:8px 10px;text-align:center;}
+    th{background:#ffe9f1;font-weight:600;}
+
+    .faq-item{margin-bottom:14px;}
+    .faq-item h3{font-size:15px;margin:0 0 4px;}
+    .faq-item p{margin:0;font-size:13px;color:var(--gray);}
+
+    footer{
+      padding:18px 16px 32px;
+      background:#222;
+      color:#bbb;
+      font-size:12px;
+      text-align:center;
+    }
+
+    @media (max-width:600px){
+      .hero-text h1{font-size:24px;}
+      header{padding-bottom:28px;}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">DAZZ</div>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>點亮雙眸的日常小儀式</h1>
+        <p>DAZZ 眼部保養系列，結合恆溫熱敷與震動按摩，讓疲憊眼周在幾分鐘內重新有神。</p>
+        <div class="hero-badges">
+          <span class="badge">恆溫熱敷 38–42°C</span>
+          <span class="badge">高頻震動按摩</span>
+          <span class="badge">眼霜導入好幫手</span>
+          <span class="badge">輕巧隨身設計</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="DAZZ_EM403-1000x1000-main.jpg" alt="DAZZ 眼部按摩儀主視覺" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="brand">
+  <div class="container">
+    <h2>關於 DAZZ</h2>
+    <p class="sub">DAZZ 專注於日常居家美容儀器，希望用簡單好上手的小工具，讓保養變成輕鬆愉快的享受。</p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>溫和眼周保養</h3>
+        <p>以舒適溫度與柔和震動為核心設計，適合長時間使用 3C、需要舒緩疲勞的雙眼。</p>
+      </div>
+      <div class="feature-item">
+        <h3>搭配保養品使用</h3>
+        <p>可搭配眼霜或精華，協助保養成分快速導入，讓每一次塗抹更有效率。</p>
+      </div>
+      <div class="feature-item">
+        <h3>輕巧好攜帶</h3>
+        <p>單手即可掌握的機身尺寸，放進化妝包或小手袋，隨時隨地開啟個人眼部 SPA。</p>
+      </div>
+      <div class="feature-item">
+        <h3>USB 充電設計</h3>
+        <p>Type‑C 充電介面，減少電池耗損，更符合日常使用習慣。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <h2>產品一覽</h2>
+    <p class="sub">依照你的使用情境，選擇最適合的 DAZZ 眼部按摩儀。</p>
+
+    <div class="products">
+      <!-- EM403 卡片 -->
+      <article class="card" id="em403">
+        <img src="DAZZ_EM403-1000x1000-1.jpg" alt="DAZZ EM403 EMS 眼部按摩儀" />
+        <div class="card-body">
+          <span class="tag">EMS 微電流 + 震動按摩</span>
+          <h3>EM403 眼部按摩儀</h3>
+          <small>適合想要明顯放鬆、提升眼周彈潤感的使用者。</small>
+          <ul class="spec-list">
+            <li>震動頻率：8000 rpm</li>
+            <li>溫度模式：38°C／42°C／45°C 三段</li>
+            <li>功能：EMS 微電流、震動按摩、恆溫熱敷</li>
+            <li>電池容量：400 mAh</li>
+            <li>產品尺寸：約 47 × 50 mm，重量約 56 g</li>
+            <li>充電介面：Type‑C，約 60 分鐘充飽</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <span>適合：長時間用眼、在意眼周緊實度者</span>
+          <button class="btn">了解更多</button>
+        </div>
+      </article>
+
+      <!-- EM401 卡片 -->
+      <article class="card" id="em401">
+        <img src="DAZZ-EM401-1.jpg" alt="DAZZ EM401 眼部導入按摩儀" />
+        <div class="card-body">
+          <span class="tag">恆溫導入 + 高頻震動</span>
+          <h3>EM401 眼部導入按摩儀</h3>
+          <small>主打眼霜導入與日常放鬆，輕盈好攜帶。</small>
+          <ul class="spec-list">
+            <li>震動頻率：約 11000 次/分</li>
+            <li>溫度設定：42°C 恆溫熱敷</li>
+            <li>功能：震動按摩、眼霜導入、恆溫熱敷</li>
+            <li>電池容量：300 mAh</li>
+            <li>續航：單次約 3 分鐘，可使用約 18 次</li>
+            <li>產品尺寸：約 40 × 50 mm，淨重約 23 g</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <span>適合：搭配眼霜、追求極致輕巧者</span>
+          <button class="btn outline">查看細節</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="container">
+    <h2>怎麼選擇適合自己的款式？</h2>
+    <p class="sub">從功能與使用情境快速比較 EM401 與 EM403。</p>
+    <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>項目</th>
+          <th>EM401 眼部導入按摩儀</th>
+          <th>EM403 EMS 眼部按摩儀</th>
+        </tr>
+        <tr>
+          <td>主要訴求</td>
+          <td>眼霜導入、輕量隨身保養</td>
+          <td>眼周放鬆、溫感舒壓與緊實感</td>
+        </tr>
+        <tr>
+          <td>溫度設定</td>
+          <td>單一 42°C 恆溫</td>
+          <td>38°C／42°C／45°C 三段可切換</td>
+        </tr>
+        <tr>
+          <td>震動規格</td>
+          <td>約 11000 次/分高頻震動</td>
+          <td>8000 rpm 震動按摩</td>
+        </tr>
+        <tr>
+          <td>是否具 EMS 微電流</td>
+          <td>否</td>
+          <td>是，三段強度可調</td>
+        </tr>
+        <tr>
+          <td>電池容量</td>
+          <td>300 mAh，約 18 次使用</td>
+          <td>400 mAh，建議每次約 5 分鐘</td>
+        </tr>
+        <tr>
+          <td>重量與尺寸</td>
+          <td>約 23 g，40 × 50 mm，更輕盈</td>
+          <td>約 56 g，47 × 50 mm，握持感更飽滿</td>
+        </tr>
+        <tr>
+          <td>推薦族群</td>
+          <td>日常保養、搭配眼霜導入為主</td>
+          <td>長時間用眼、喜歡溫感舒壓與多段模式者</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <h2>常見問題</h2>
+    <div class="faq-item">
+      <h3>Q1. 兩款產品可以搭配任何眼霜使用嗎？</h3>
+      <p>建議避免酸類或具刺激性的醫美產品，選擇質地溫和、保濕型眼霜或精華，再搭配按摩儀導入。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q2. 使用時間需要注意什麼？</h3>
+      <p>單次建議 3–5 分鐘即可，依個人感受調整，不需要過度使用，以免造成肌膚負擔。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q3. 有防水功能嗎？</h3>
+      <p>本系列為非防水設計，請避免直接沖洗，以乾布或微濕棉片擦拭機身即可。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    DAZZ 眼部保養系列｜本頁僅為示意版型，可依實際銷售平台與文案再調整。
+  </div>
+</footer>
+</body>
+</html>
